@@ -16,5 +16,5 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 
-<img src="[path/to/screenshot.png](https://github.com/koperdasV/Cat-Trivia/blob/main/Main%20Screen.png)" width="500">
+![MainScreen](https://github.com/koperdasV/Cat-Trivia/blob/main/Main%20Screen.png)
 ![HistoryScreen](https://github.com/koperdasV/Cat-Trivia/blob/main/Fact%20History%20Screen.png)
