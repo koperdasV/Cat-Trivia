@@ -15,5 +15,6 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-![MainScreen](https://github.com/koperdasV/Cat-Trivia/blob/main/Main%20Screen.png,width="200", height="300")
+
+<img src="[path/to/screenshot.png](https://github.com/koperdasV/Cat-Trivia/blob/main/Main%20Screen.png)" width="500">
 ![HistoryScreen](https://github.com/koperdasV/Cat-Trivia/blob/main/Fact%20History%20Screen.png)
