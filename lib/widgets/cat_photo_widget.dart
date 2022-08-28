@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 
 class CatPhoto extends StatelessWidget {
-  const CatPhoto({Key? key}) : super(key: key);
+  const CatPhoto({
+    Key? key,
+    required String imageUrl,
+    required int imageVersion,
+  }) : _imageUrl = imageUrl, _imageVersion = imageVersion, super(key: key);
+
+  final String _imageUrl;
+  final int _imageVersion;
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      // width: 280,
-      // height: 180,
-      child: Image.asset('images/cat.png'),
-    );
+    return Image.network('$_imageUrl?v=$_imageVersion');
   }
 }

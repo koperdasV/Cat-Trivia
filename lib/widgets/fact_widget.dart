@@ -4,9 +4,12 @@ class FactWidget extends StatelessWidget {
   const FactWidget({
     Key? key,
     required this.fact,
+    this.fontSize = 24, this.color= const Color.fromRGBO(69, 161, 227, 1),
   }) : super(key: key);
 
   final String fact;
+  final double? fontSize;
+  final Color? color;
 
   @override
   Widget build(BuildContext context) {
@@ -14,12 +17,11 @@ class FactWidget extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 31),
       child: Text(
         fact,
-        // overflow: TextOverflow.ellipsis,
         maxLines: 15,
-        style: const TextStyle(
-            fontSize: 24,
+        style: TextStyle(
+            fontSize: fontSize,
             fontFamily: 'Angkor',
-            color: Color.fromRGBO(69, 161, 227, 1)),
+            color: color),
       ),
     );
   }

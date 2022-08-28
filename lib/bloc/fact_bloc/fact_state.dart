@@ -3,14 +3,14 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/cupertino.dart';
 
 @immutable
-abstract class FactSate extends Equatable {}
+abstract class FactState extends Equatable {}
 
-class FactLoadingState extends FactSate {
+class FactLoadingState extends FactState {
   @override
   List<Object?> get props => [];
 }
 
-class FactLoadedState extends FactSate {
+class FactLoadedState extends FactState {
   final FactModel fact;
 
   FactLoadedState(this.fact);
@@ -19,7 +19,7 @@ class FactLoadedState extends FactSate {
   List<Object?> get props => [fact];
 }
 
-class FactErrorState extends FactSate {
+class FactErrorState extends FactState {
   final String error;
 
   FactErrorState(this.error);

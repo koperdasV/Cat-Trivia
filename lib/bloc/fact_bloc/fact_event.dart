@@ -6,7 +6,7 @@ abstract class FactEvent extends Equatable {
   const FactEvent();
 }
 
-class LoadFactEvent extends FactEvent{
+class LoadFactEvent extends FactEvent {
   @override
   List<Object> get props => [];
 }

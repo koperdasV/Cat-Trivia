@@ -3,7 +3,7 @@ import 'package:cat_trivia/bloc/fact_bloc/fact_state.dart';
 import 'package:cat_trivia/data/repositories/fact_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class FactBloc extends Bloc<FactEvent, FactSate> {
+class FactBloc extends Bloc<FactEvent, FactState> {
   final FactRepository _factRepository;
 
   FactBloc(this._factRepository) : super(FactLoadingState()) {
